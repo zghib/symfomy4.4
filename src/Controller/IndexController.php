@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class IndexController
 {
     /**
-     * @Route("/index")
+     * @Route("/index", methods={"GET"})
      * @Security("is_granted('ROLE_ADMIN')")
      */
     public function index()
